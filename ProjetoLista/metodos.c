@@ -16,3 +16,10 @@ void exibir(Celula *ini){
 		printf("%d\n",p->conteudo);
 	}
 }
+
+void excluir(Celula *ini){
+	Celula *morta;
+	morta = ini->prox;
+	ini->prox = morta->prox;
+	free(morta);
+}

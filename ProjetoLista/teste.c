@@ -9,6 +9,9 @@ main(){
 	inserir(3,lista);
 	inserir(5,lista);
 	inserir(10,lista);
-	printf("\nElementos da Lista:\n");
+	printf("\nAntes de excluir:\n");
+	exibir(lista);
+	excluir(lista);
+	printf("\nDepois de excluir:\n");
 	exibir(lista);
 }
