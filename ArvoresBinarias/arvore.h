@@ -8,3 +8,4 @@ typedef struct arv Arv;
 
 Arv *criar(char c,Arv *sae,Arv *sad);
 void exibir(Arv *a);
+int pertence(Arv *a,char c);

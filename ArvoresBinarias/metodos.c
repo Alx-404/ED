@@ -20,3 +20,11 @@ void exibir(Arv *a){
 		printf("<>");
 	}
 }
+
+int pertence (Arv *a,char c){
+	if(a==NULL){
+		return 0;
+	}else{
+		return a->conteudo==c || pertence(a->esq,c) || pertence(a->dir,c);
+	}
+}
